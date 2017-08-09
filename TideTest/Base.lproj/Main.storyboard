@@ -64,7 +64,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OS6-eR-cnG" id="smB-HT-YLt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH7-Q9-gMz">
@@ -147,6 +147,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-W5-1dO">
                                 <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hvz-c1-Oyq" id="fY2-1b-siy"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.79917043450000003" green="0.99814683199999998" blue="0.60110598800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,7 +173,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="siX-z4-1R5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3P1-oo-d1n">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3P1-oo-d1n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -70,7 +70,7 @@ extension MainViewController:CLLocationManagerDelegate {
         print("user latitude = \(userLocation.coordinate.latitude)")
         print("user longitude = \(userLocation.coordinate.longitude)")
         
-        ApiManager.sharedInstance.getBarsList(with: userLocation.coordinate.latitude, Long: userLocation.coordinate.longitude, radius: 200,typeOfBusiness:"bar", succesBlock: { [weak self] (response) in
+        ApiManager.sharedInstance.getBarsList(with: userLocation.coordinate.latitude, Long: userLocation.coordinate.longitude, radius: 500,typeOfBusiness:"bar", succesBlock: { [weak self] (response) in
             
             if let main = response as? MainResponse,
                 let results = main.results {
@@ -93,6 +93,13 @@ extension MainViewController:CLLocationManagerDelegate {
                     self?.resultsDataSource = results
                 }
                
+                if let mapVC = self?.slidingContainerViewController?.contentViewControllers.last as? MapViewController {
+                    mapVC.resultsDataSource = results
+                    mapVC.centerMapOnLocation(location: userLocation)
+                    mapVC.addAnnotationsForMap()
+                    self?.resultsDataSource = results
+                }
+                
             }
             
             
@@ -113,6 +120,13 @@ extension MainViewController: SlidingContainerViewControllerDelegate {
         if let listVC = viewController as? TableViewController {
             listVC.resultsDataService.resultsDataSource = self.resultsDataSource
             listVC.tableView.reloadData()
+        }
+        
+        if let mapVC = viewController as? MapViewController {
+            mapVC.resultsDataSource = self.resultsDataSource
+//            mapVC.location = self.locationManager.location
+            mapVC.centerMapOnLocation(location: self.locationManager.location!)
+            mapVC.addAnnotationsForMap()
         }
     }
     
