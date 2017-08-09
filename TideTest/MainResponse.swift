@@ -11,7 +11,7 @@ import ObjectMapper
 
 class MainResponse: NSObject,Mappable {
     
-    var results:String?
+    var results:[ResultItem]?
     var status:String?
     
     public required init?(map: Map) {

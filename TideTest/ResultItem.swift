@@ -11,7 +11,7 @@ import ObjectMapper
 
 class ResultItem: NSObject,Mappable {
     
-    var geometry:String?
+    var geometry:Geometry?
     var name:String?
     var rating:String?
     var vicinity:String?
