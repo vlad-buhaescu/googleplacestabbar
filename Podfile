@@ -10,6 +10,8 @@ pod 'GooglePlaces'
 pod 'GooglePlacePicker'
 pod 'Alamofire'
 pod 'AlamofireObjectMapper', '~> 4.0'
+pod 'SlidingContainerViewController'
+
   target 'TideTestTests' do
     inherit! :search_paths
     # Pods for testing
