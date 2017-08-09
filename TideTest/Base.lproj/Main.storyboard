@@ -56,6 +56,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bars arround your location!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4v-DW-pKX">
+                                <rect key="frame" x="89" y="325.5" width="197" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qm0-Md-Kqk">
                                 <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,12 +124,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qm0-Md-Kqk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="IRg-2P-MC1"/>
+                            <constraint firstItem="O4v-DW-pKX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VkL-dD-c1v"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qm0-Md-Kqk" secondAttribute="bottom" id="iYv-cs-CcY"/>
                             <constraint firstItem="Qm0-Md-Kqk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kA1-UB-ybk"/>
                             <constraint firstAttribute="trailing" secondItem="Qm0-Md-Kqk" secondAttribute="trailing" id="kf7-7k-lgK"/>
+                            <constraint firstItem="O4v-DW-pKX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t9b-Q2-gTi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emptyStateLabel" destination="O4v-DW-pKX" id="SMz-SL-C9t"/>
                         <outlet property="resultsDataService" destination="mWp-F8-K2D" id="bGu-cX-oX7"/>
                         <outlet property="tableView" destination="Qm0-Md-Kqk" id="FnC-5e-GmU"/>
                     </connections>
@@ -152,7 +161,7 @@
                                 </connections>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="0.79917043450000003" green="0.99814683199999998" blue="0.60110598800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OoI-W5-1dO" secondAttribute="trailing" id="Jxl-Zq-WMw"/>
                             <constraint firstItem="OoI-W5-1dO" firstAttribute="leading" secondItem="5db-ad-lgG" secondAttribute="leading" id="XVe-gj-ASn"/>

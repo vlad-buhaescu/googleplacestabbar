@@ -56,9 +56,13 @@ extension MapViewController:MKMapViewDelegate {
             } else {
                 // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.pinTintColor = UIColor.init(colorLiteralRed: 217.0/255.0, green: 108.0/255.0, blue: 0, alpha: 1.0)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.rightCalloutAccessoryView = UIButton(type: .custom)
+                let button = UIButton(type: .custom)
+                button.setImage(#imageLiteral(resourceName: "compas"), for: UIControlState.normal)
+                button.frame = CGRect.init(x: 0, y: 0, width: 25, height: 25)
+                view.rightCalloutAccessoryView = button
             }
             return view
         }

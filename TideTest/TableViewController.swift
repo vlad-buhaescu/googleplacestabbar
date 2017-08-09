@@ -11,15 +11,17 @@ import GooglePlaces
 
 class TableViewController: UIViewController {
     
+    @IBOutlet weak var emptyStateLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var resultsDataService: ResultsDataService!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self.resultsDataService
         self.tableView.dataSource = self.resultsDataService
     }
+    
+    
     
 }
 
