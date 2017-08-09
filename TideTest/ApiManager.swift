@@ -22,14 +22,18 @@ class ApiManager: NSObject {
     
     static let sharedInstance = ApiManager()
     
-    fileprivate let baseURL = ""
+    // https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=AIzaSyCb5Wa_lTCbzxRh8bZnm_Lh_yKHAQZxLms
+    
+    fileprivate let key = "&key=AIzaSyCb5Wa_lTCbzxRh8bZnm_Lh_yKHAQZxLms"
+    
+    fileprivate let baseURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
     
     typealias SuccesBlock = (DataResponse<Any>) -> Void
     typealias FailureBlock = (Error!) -> Void
     
     func basicAPICall(_ type: Alamofire.HTTPMethod, complementaryURL: String, parameters: Dictionary<String,Any>, succesBlock: @escaping SuccesBlock, failureBlock: @escaping FailureBlock)    {
         
-        let urlString: String = baseURL + complementaryURL as String
+        let urlString: String = baseURL + complementaryURL + key
         
         switch type {
         case .get:

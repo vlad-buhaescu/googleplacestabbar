@@ -9,16 +9,21 @@
 import Foundation
 import Alamofire
 
-let supplymentaryUrl = ""
-
+let locationUrl = "location="
+let type = "&type="
 extension ApiManager {
     
-    func getBarsList(succesBlock: @escaping SuccesBlockAny,failureBlock: @escaping FailureBlock)  {
+    func getBarsList(with Lat:Double,Long:Double,radius:Int,typeOfBusiness:String, succesBlock: @escaping SuccesBlockAny,failureBlock: @escaping FailureBlock)  {
         
-        ApiManager.sharedInstance.basicAPICall(.get, complementaryURL: supplymentaryUrl, parameters: [:], succesBlock: { (resultDict) in
+        let complementaryURL = locationUrl + "\(Lat)," + "\(Long)" + "&radius=\(radius)" + type + typeOfBusiness
+        
+        ApiManager.sharedInstance.basicAPICall(.get, complementaryURL: complementaryURL, parameters: [:], succesBlock: { (resultDict) in
             
             if let data = resultDict.data {
-                
+                if let result = MainResponse(JSONString: String(data: data, encoding: .utf8)!) {
+                    print("result of gmaps querry \(result)")
+                    succesBlock(result)
+                }
             } else {
                 print("parsing error in \(type(of: self)) ")
                 failureBlock(ErrorReason.failedParsingJSON)
