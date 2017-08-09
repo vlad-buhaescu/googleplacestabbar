@@ -11,7 +11,7 @@
 		5F3CDFB2A254B814978E614B /* Pods_TideTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEF6DF7CBE5899C5A5DBAA /* Pods_TideTest.framework */; };
 		A01B80C69B368CA092CE561B /* Pods_TideTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9A9188757D5D6F497B6478 /* Pods_TideTestUITests.framework */; };
 		A137777E1F3B01A800DB1B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137777D1F3B01A800DB1B02 /* AppDelegate.swift */; };
-		A13777801F3B01A800DB1B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137777F1F3B01A800DB1B02 /* ViewController.swift */; };
+		A13777801F3B01A800DB1B02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137777F1F3B01A800DB1B02 /* TableViewController.swift */; };
 		A13777831F3B01A800DB1B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13777811F3B01A800DB1B02 /* Main.storyboard */; };
 		A13777851F3B01A800DB1B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13777841F3B01A800DB1B02 /* Assets.xcassets */; };
 		A13777881F3B01A800DB1B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13777861F3B01A800DB1B02 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,8 @@
 		A13777B51F3B36A100DB1B02 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777B41F3B36A100DB1B02 /* ResultItem.swift */; };
 		A13777B71F3B381500DB1B02 /* ItemLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777B61F3B381500DB1B02 /* ItemLocation.swift */; };
 		A13777B91F3B386C00DB1B02 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777B81F3B386C00DB1B02 /* Geometry.swift */; };
+		A13777BC1F3B4D9500DB1B02 /* ResultsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */; };
+		A13777BE1F3B4E3F00DB1B02 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,7 @@
 		9A6B1F2A485E061E49B7C8B8 /* Pods-TideTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TideTest/Pods-TideTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A137777A1F3B01A800DB1B02 /* TideTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TideTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A137777D1F3B01A800DB1B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A137777F1F3B01A800DB1B02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A137777F1F3B01A800DB1B02 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A13777821F3B01A800DB1B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13777841F3B01A800DB1B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13777871F3B01A800DB1B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		A13777B41F3B36A100DB1B02 /* ResultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		A13777B61F3B381500DB1B02 /* ItemLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemLocation.swift; sourceTree = "<group>"; };
 		A13777B81F3B386C00DB1B02 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsDataService.swift; sourceTree = "<group>"; };
+		A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		A8BEF6DF7CBE5899C5A5DBAA /* Pods_TideTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TideTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD69CB145869E7EB5C87C147 /* Pods-TideTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DA07DA916ABF5E6D71F2FA /* Pods-TideTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				A137777D1F3B01A800DB1B02 /* AppDelegate.swift */,
-				A137777F1F3B01A800DB1B02 /* ViewController.swift */,
+				A137777F1F3B01A800DB1B02 /* TableViewController.swift */,
+				A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */,
+				A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */,
 				A13777B11F3B321400DB1B02 /* Network */,
 				A13777BA1F3B38C500DB1B02 /* Model */,
 				A13777811F3B01A800DB1B02 /* Main.storyboard */,
@@ -481,13 +487,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13777801F3B01A800DB1B02 /* ViewController.swift in Sources */,
+				A13777801F3B01A800DB1B02 /* TableViewController.swift in Sources */,
 				A13777B71F3B381500DB1B02 /* ItemLocation.swift in Sources */,
 				A13777B51F3B36A100DB1B02 /* ResultItem.swift in Sources */,
+				A13777BC1F3B4D9500DB1B02 /* ResultsDataService.swift in Sources */,
 				A13777AE1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift in Sources */,
 				A13777AD1F3B30AE00DB1B02 /* ApiManager.swift in Sources */,
 				A13777B91F3B386C00DB1B02 /* Geometry.swift in Sources */,
 				A137777E1F3B01A800DB1B02 /* AppDelegate.swift in Sources */,
+				A13777BE1F3B4E3F00DB1B02 /* ResultTableViewCell.swift in Sources */,
 				A13777B31F3B363A00DB1B02 /* MainResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NKABUV39MY;
 				INFOPLIST_FILE = TideTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.TideTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,6 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NKABUV39MY;
 				INFOPLIST_FILE = TideTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.TideTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

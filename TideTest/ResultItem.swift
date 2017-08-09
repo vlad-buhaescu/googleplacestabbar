@@ -13,8 +13,9 @@ class ResultItem: NSObject,Mappable {
     
     var geometry:Geometry?
     var name:String?
-    var rating:String?
+    var rating:Double?
     var vicinity:String?
+    var distanceFromUser:Double?
    
     public required init?(map: Map) {
     }

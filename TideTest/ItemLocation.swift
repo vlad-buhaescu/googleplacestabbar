@@ -11,8 +11,8 @@ import ObjectMapper
 
 class ItemLocation: NSObject,Mappable {
     
-    var lat:String?
-    var long:String?
+    var lat:Double?
+    var long:Double?
     
     public required init?(map: Map) {
     }
