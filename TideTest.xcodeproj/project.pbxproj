@@ -25,6 +25,8 @@
 		A13777B91F3B386C00DB1B02 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777B81F3B386C00DB1B02 /* Geometry.swift */; };
 		A13777BC1F3B4D9500DB1B02 /* ResultsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */; };
 		A13777BE1F3B4E3F00DB1B02 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */; };
+		A13777C01F3B642600DB1B02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777BF1F3B642600DB1B02 /* MainViewController.swift */; };
+		A13777C21F3B642F00DB1B02 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777C11F3B642F00DB1B02 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		A13777B81F3B386C00DB1B02 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsDataService.swift; sourceTree = "<group>"; };
 		A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		A13777BF1F3B642600DB1B02 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A13777C11F3B642F00DB1B02 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A8BEF6DF7CBE5899C5A5DBAA /* Pods_TideTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TideTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD69CB145869E7EB5C87C147 /* Pods-TideTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DA07DA916ABF5E6D71F2FA /* Pods-TideTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				A137777D1F3B01A800DB1B02 /* AppDelegate.swift */,
+				A13777BF1F3B642600DB1B02 /* MainViewController.swift */,
+				A13777C11F3B642F00DB1B02 /* MapViewController.swift */,
 				A137777F1F3B01A800DB1B02 /* TableViewController.swift */,
 				A13777BB1F3B4D9500DB1B02 /* ResultsDataService.swift */,
 				A13777BD1F3B4E3F00DB1B02 /* ResultTableViewCell.swift */,
@@ -488,11 +494,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13777801F3B01A800DB1B02 /* TableViewController.swift in Sources */,
+				A13777C01F3B642600DB1B02 /* MainViewController.swift in Sources */,
 				A13777B71F3B381500DB1B02 /* ItemLocation.swift in Sources */,
 				A13777B51F3B36A100DB1B02 /* ResultItem.swift in Sources */,
 				A13777BC1F3B4D9500DB1B02 /* ResultsDataService.swift in Sources */,
 				A13777AE1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift in Sources */,
 				A13777AD1F3B30AE00DB1B02 /* ApiManager.swift in Sources */,
+				A13777C21F3B642F00DB1B02 /* MapViewController.swift in Sources */,
 				A13777B91F3B386C00DB1B02 /* Geometry.swift in Sources */,
 				A137777E1F3B01A800DB1B02 /* AppDelegate.swift in Sources */,
 				A13777BE1F3B4E3F00DB1B02 /* ResultTableViewCell.swift in Sources */,
