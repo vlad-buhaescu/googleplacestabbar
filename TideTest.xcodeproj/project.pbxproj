@@ -17,6 +17,8 @@
 		A13777881F3B01A800DB1B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13777861F3B01A800DB1B02 /* LaunchScreen.storyboard */; };
 		A13777931F3B01A800DB1B02 /* TideTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777921F3B01A800DB1B02 /* TideTestTests.swift */; };
 		A137779E1F3B01A800DB1B02 /* TideTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137779D1F3B01A800DB1B02 /* TideTestUITests.swift */; };
+		A13777AD1F3B30AE00DB1B02 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777AB1F3B30AE00DB1B02 /* ApiManager.swift */; };
+		A13777AE1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13777AC1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		A13777991F3B01A800DB1B02 /* TideTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TideTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A137779D1F3B01A800DB1B02 /* TideTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TideTestUITests.swift; sourceTree = "<group>"; };
 		A137779F1F3B01A800DB1B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13777AB1F3B30AE00DB1B02 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		A13777AC1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApiManager+MapRequest.swift"; sourceTree = "<group>"; };
 		A8BEF6DF7CBE5899C5A5DBAA /* Pods_TideTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TideTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD69CB145869E7EB5C87C147 /* Pods-TideTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DA07DA916ABF5E6D71F2FA /* Pods-TideTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TideTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TideTestTests/Pods-TideTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			children = (
 				A137777D1F3B01A800DB1B02 /* AppDelegate.swift */,
 				A137777F1F3B01A800DB1B02 /* ViewController.swift */,
+				A13777AB1F3B30AE00DB1B02 /* ApiManager.swift */,
+				A13777AC1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift */,
 				A13777811F3B01A800DB1B02 /* Main.storyboard */,
 				A13777841F3B01A800DB1B02 /* Assets.xcassets */,
 				A13777861F3B01A800DB1B02 /* LaunchScreen.storyboard */,
@@ -447,6 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13777801F3B01A800DB1B02 /* ViewController.swift in Sources */,
+				A13777AE1F3B30AE00DB1B02 /* ApiManager+MapRequest.swift in Sources */,
+				A13777AD1F3B30AE00DB1B02 /* ApiManager.swift in Sources */,
 				A137777E1F3B01A800DB1B02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +706,7 @@
 				A13777A41F3B01A800DB1B02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13777A51F3B01A800DB1B02 /* Build configuration list for PBXNativeTarget "TideTestTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +715,7 @@
 				A13777A71F3B01A800DB1B02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13777A81F3B01A800DB1B02 /* Build configuration list for PBXNativeTarget "TideTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +724,7 @@
 				A13777AA1F3B01A800DB1B02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

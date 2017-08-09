@@ -8,6 +8,7 @@ target 'TideTest' do
   # Pods for TideTest
 pod 'GooglePlaces'
 pod 'GooglePlacePicker'
+pod 'Alamofire'
   target 'TideTestTests' do
     inherit! :search_paths
     # Pods for testing
