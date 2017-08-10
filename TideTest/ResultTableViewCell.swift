@@ -43,7 +43,7 @@ class ResultTableViewCell: UITableViewCell {
         }
         
         if let distance = resultItem.distanceFromUser {
-            self.distanceLabel.text =  String(format: "Distance: %.2f meters", distance)
+            self.distanceLabel.text = String(format: "Distance: %.2f meters", distance)
         }
         
     }
